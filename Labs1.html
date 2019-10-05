@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+<title>Exercise1</title>
+
+<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Font Awesome -->
+<link
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	rel="stylesheet">
+
+<style type="text/css">
+div.container {
+	width: 100%;
+	margin: auto;
+}
+/* định dạng thẻ div chưa các button tab */
+div.tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
+/* định dạng các button tab */
+div.tab button {
+	background-color: inherit;
+	float: left;
+	border: center;
+	outline: none;
+	cursor: pointer;
+	padding: 20px 40px;
+	transition: 0.3s;
+	font-size: 20px;
+}
+/* đổi màu khi một button tab được hover */
+div.tab button:hover {
+	background-color: #ddd;
+}
+/* đổi màu nền cho tab đang được hiển thị nội dung */
+div.tab button.active {
+	background-color: #ccc;
+}
+/* định dạng nội dung hiển thị */
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+</style>
+
+</head>
+
+<body>
+
+	<!-- Header -->
+	<div class="header-wrap d-none d-md-block">
+		<div class="container">
+			<div class="row">
+
+				<!-- Left header box -->
+				<header class="col-6 text-right">
+					<h1>exercise1</h1>
+				</header>
+
+				<!-- Right header box -->
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Main navigation -->
+	<nav class="navbar navbar-expand-md navbar-dark bg-primary no-slider">
+		<div class="container">
+
+			<!-- Company name shown on mobile -->
+			<a class="navbar-brand d-md-none d-lg-none d-xl-none" href="#"><span>Exercise1</span></a>
+
+			<!-- Mobile menu toggle -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#mainNavbar" aria-controls="mainNavbar"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Main navigation items -->
+			<div class="collapse navbar-collapse" id="mainNavbar">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link " href="index.html">Home
+							<span class="sr-only">(current)</span>
+					</a></li>
+
+					<li class="nav-item"><a class="nav-link  active"
+						href="Labs1.html">Exercise1</a></li>
+					<li class="nav-item"><a class="nav-link " href="Labs2.html">Exercise2</a>
+
+					</li>
+					<li class="nav-item"><a class="nav-link " href="Labs3.html">Exercise3</a>
+
+					</li>
+					<li class="nav-item"><a class="nav-link " href="Labs4.html">Exercise4</a>
+					</li>
+					<li class="nav-item"><a class="nav-link " href="Labs5.html">Exercise5</a>
+					<li class="nav-item"><a class="nav-link " href="About.html">About</a>
+					</li>
+				</ul>
+				<form class="My Labs">
+					<input class="form-control mr-sm-2" type="text" size="10"
+						placeholder="Search" aria-label="Search">
+					<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+				</form>
+
+
+			</div>
+		</div>
+	</nav>
+	<main class="container">
+	<div class="row"></div>
+
+	</main>
+	<div class="container">
+		<h4></h4>
+		<div class="tab">
+			<button class="tablinks active ">Requirement</button>
+			<button class="tablinks">Design</button>
+			<button class="tablinks">Implement</button>
+		</div>
+
+		<div id="Requirement" class="tabcontent">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th scope="col" style="color: black"><b>STT</b></th>
+						<th scope="col" style="color: black">Yêu cầu</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td>Chọn một phần mềm bất kỳ để thực hiện việc thiết kế</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>Chọn 1 đối tượng bất kỳ trong thế giới thực, ví
+							dụ như sinh viên, môn học, giảng viên,... để thiết kế trên
+							phần mềm (1) một chức năng trên web để thêm, sửa, xóa, tìm
+							kiếm cho đối tượng đó.</td>
+
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>Sau đó chuyển toàn bộ giao diện của phần 2 vào html</td>
+
+					</tr>
+
+					<tr>
+						<th scope="row">4</th>
+						<td>Upload lên Github trong menu Lab1 theo thứ tự:
+							Thiết kế (thiết kế trên giấy và  thiết kế trên phần mềm) và Hiện thực (link
+							tới file html)</td>
+
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div id="Design" class="tabcontent">
+		<div role="tabpanel" class="tab-pane" id="week1">
+		</div>
+
+		<div id="accordion">
+			<div class="card">
+				<div class="card-header">
+
+					<a class="collapsed card-link" data-toggle="collapse"
+						href="#collapseTwo" style="color: #179EFF">Thiết kế trên giấy</a>
+				</div>
+				<div class="card-body-design">
+					<div class="card-right">
+						<a href="images/anh1.zip"><button
+								class="btn btn-deep-orange " type="button"
+								style="width: 120px; font-size: 15px; padding-left: 8px; color: #1adaef; background: #ff7b00;">
+								<i></i> Download
+							</button></a>
+					</div>
+					<div class="card-left">
+						<img src="images/anh1.jpg" alt="" width="400px">
+					</div>
+				</div>
+			</div>
+
+<br>
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed card-link" data-toggle="collapse"
+						href="#collapseTwo" style="color: #179EFF">Thêm sản
+						phẩm</a>
+				</div>
+				<div class="card-body-design">
+				<div class="card-right">
+						<a href="images/add.zip"><button class="btn btn-deep-orange "
+								type="button"
+								style="width: 120px; font-size: 15px; padding-left: 8px; color: #1adaef; background: #ff7b00;">
+								<i ></i> Download
+							</button></a>
+					</div>
+					<div class="card-left">
+						<img src="images/add.jpg" alt="" width="600px">
+					</div>
+			</div>
+
+<br>
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed card-link" data-toggle="collapse"
+						href="#collapseTwo" style="color: #179EFF">Giỏ hàng</a>
+				</div>
+				<div class="card-body-design">
+				<div class="card-right">
+						<a href="images/giohang.zip"><button class="btn btn-deep-orange "
+								type="button"
+								style="width: 120px; font-size: 15px; padding-left: 8px; color: #1adaef; background: #ff7b00;">
+								<i></i> Download
+							</button></a>
+					</div>
+					<div class="card-left">
+						<img src="images/giohang.jpg" alt="" width="600px">
+					</div>
+				</div>
+<br>
+				<div class="card">
+				<div class="card-header">
+					<a class="collapsed card-link" data-toggle="collapse"
+						href="#collapseTwo" style="color: #179EFF">Page</a>
+				</div>
+				<div class="card-body-design">
+					<div class="card-right">
+						<a href="images/logo.zip"><button class="btn btn-deep-orange "
+								type="button"
+								style="width: 120px; font-size: 15px; padding-left: 8px; color: #1adaef; background: #ff7b00;">
+								<i></i> Download
+							</button></a>
+					</div>
+					<div class="card-left">
+						<img src="images/logo.jpg" alt="" width="600px">
+					</div>
+					
+				</div>
+<br>
+			<div class="card">
+			<div class="card-header">
+					<a class="collapsed card-link" data-toggle="collapse"
+						href="#collapseTwo" style="color: #179EFF">Download all file</a>
+				</div>
+				<div class="card-body-design">
+					<div class="card-right">
+						<a href="images\17130106_Design.zip"><button class="btn btn-deep-orange "
+								type="button"
+								style="width: 120px; font-size: 15px; padding-left: 8px; color: #1adaef; background: #ff7b00;">
+								<i></i> Download
+							</button></a>
+					</div>
+				</div>
+			</div>
+					
+			</div>
+	</div>
+</div>
+</div>
+				</div>
+
+	<div id="Implement" class="tabcontent">
+		<div role="tabpanel" class="tab-pane" id="week1">
+			<div id="accordion">
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed card-link" data-toggle="collapse"
+							href="#collapseTwo" style="color: #179EFF"> Quản lý
+							sản phẩm</a>
+					</div>
+					<div id="collapseTwo" class="collapse show"
+						data-parent="#accordion">
+						<div class="card-body">
+							<br>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-sm-8">
+										<input type="text" class="form-control form-control"
+											style="height: 40px;"
+											placeholder="Nhập thông tin tìm kiếm..." autofocus>
+									</div>
+
+									<div class="col-sm-4">
+										<button type="button" class="btn btn-secondary"
+											style="height: 40px; background-color: #ff7b00;">
+											<i class="fa fa-search"></i> Tìm kiếm
+										</button>
+										<button type="button" class="btn btn-secondary"
+											style="height: 40px; background-color: #ff7b00">
+											<i class="fa fa-plus"></i> Thêm mới
+										</button>
+									</div>
+								</div>
+								<br>
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th data-toggle="tooltip" title="Số thứ tự">STT</th>
+											<th>Khuyến Mãi</th>
+											<th>Giá SP</th>
+											<th>Tên SP</th>
+											<th>Danh mục</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td></td>
+											<td>5$</td>
+											<td>Ốp lưng điện thoại Samsung</td>
+											<td>Phụ kiện điện thoại</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td></td>
+											<td>10.000$</td>
+											<td>iPhone X 64GB New 2019 -Bảng Quốc Tế</td>
+											<td>Điện Thoại</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td></td>
+											<td>1.000$</td>
+											<td>Laptop Gaming MSI</td>
+											<td>Máy tính</td>
+										
+										</tr>
+										<tr>
+											<td>4</td>
+											<td></td>
+											<td>2.000$</td>
+											<td>Laptop Dell</td>
+											<td>Máy tính</td>
+										
+										</tr>
+									</tbody>
+								</table>
+								<ul class="pagination"
+									style="float: center; margin-bottom: 20px;">
+									<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+									<li class="page-item"><a class="page-link" href="#">1</a></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item"><a class="page-link" href="#">...</a></li>
+									<li class="page-item"><a class="page-link" href="#">Next</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<p>Giỏ hàng</p>
+				<div class="row mb-1">
+					<div class="col-sm-2" style="color: #5C5C5C;">Tên sản phẩm:</div>
+					<div class="col-sm-4">
+						<input type="text" name="name1" placeholder="Tên sản phẩm"
+							value=""
+							style="width: 250px; height: 40px; border: 1px solid #5C5C5C; border-color: #5C5C5C;">
+					</div>
+				</div>
+
+				<div class="row mb-1">
+					<div class="col-sm-2" style="color: #5C5C5C;">Giá:</div>
+					<div class="col-sm-4">
+						<input type="text" name="imgURL1" placeholder="Nhập giá " value=""
+							style="width: 250px; height: 30px; border: 1px solid #5C5C5C;">
+					</div>
+				</div>
+
+				<div class="row mb-1">
+					<div class="col-sm-2" style="color: #5C5C5C;">Giá khuyến mãi:</div>
+					<div class="col-sm-4">
+						<input type="text" name="imgURL1"
+							placeholder="Nhập giá khuyến mãi" value=""
+							style="width: 250px; height: 40px; border: 1px solid #5C5C5C; border-color: #5C5C5C;">
+					</div>
+				</div>
+
+				<div class="row mb-1">
+					<div class="col-sm-2" style="color: #5C5C5C;">Mô tả chi tiết:</div>
+					<div class="col-sm-4">
+						<input class="input-field" type="text" name="imgURL1"
+							placeholder="Nhập mô tả chi tiết" value=""
+							style="width: 250px; height: 40px; border: 1px solid #5C5C5C; border-color: #5C5C5C;">
+					</div>
+				</div>
+				<div class="row mb-3 mt-3">
+					<div class="col-sm-8" style="margin-left: 38px;">
+						<a href=""><button class="btn btn-deep-orange" type="submit"
+								style="width: 120px; font-size: 15px; color: #ffffff; background: #ff7b00;">
+								<i class="fa fa-plus-circle"></i> Thanh Toán
+							</button></a>
+						<button class="btn btn-deep-orange " type="reset"
+							style="width: 120px; font-size: 15px; padding-left: 8px; color: #ffffff; background: #ff7b00;">
+							<i class="fa fa-close"></i> Quay lại
+						</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<br>
+		<br>
+		<p>Thêm sản phẩm</p>
+		<div class="row mb-1">
+			<div class="col-sm-2" style="color: #5C5C5C;">Tên sản phẩm:</div>
+			<div class="col-sm-4">
+				<input type="text" name="name1" placeholder="Tên sản phẩm" value=""
+					style="width: 250px; height: 40px; border: 1px solid #5C5C5C; border-color: #5C5C5C;">
+			</div>
+		</div>
+
+		<div class="row mb-1">
+			<div class="col-sm-2" style="color: #5C5C5C;">Danh mục:</div>
+			<div class="col-sm-4">
+				<input type="text" name="name1" placeholder="Danh mục" value=""
+					style="width: 250px; height: 40px; border: 1px solid #5C5C5C; border-color: #5C5C5C;">
+			</div>
+		</div>
+
+		<div class="row mb-1">
+			<div class="col-sm-2" style="color: #5C5C5C;">Giá:</div>
+			<div class="col-sm-4">
+				<input type="text" name="imgURL1" placeholder="Nhập giá " value=""
+					style="width: 250px; height: 30px; border: 1px solid #5C5C5C;">
+			</div>
+		</div>
+
+		<div class="row mb-1">
+			<div class="col-sm-2" style="color: #5C5C5C;">Giá khuyến mãi:</div>
+			<div class="col-sm-4">
+				<input type="text" name="imgURL1" placeholder="Nhập giá khuyến mãi"
+					value=""
+					style="width: 250px; height: 40px; border: 1px solid #5C5C5C; border-color: #5C5C5C;">
+			</div>
+		</div>
+
+		<div class="row mb-1">
+			<div class="col-sm-2" style="color: #5C5C5C;">Mô tả chi tiết:</div>
+			<div class="col-sm-4">
+				<input class="input-field" type="text" name="imgURL1"
+					placeholder="Nhập mô tả chi tiết" value=""
+					style="width: 250px; height: 40px; border: 1px solid #5C5C5C; border-color: #5C5C5C;">
+			</div>
+		</div>
+		<div class="row mb-3 mt-3">
+			<div class="col-sm-8" style="margin-left: 38px;">
+				<a href=""><button class="btn btn-deep-orange" type="submit"
+						style="width: 120px; font-size: 15px; color: #ffffff; background: #ff7b00;">
+						<i class="fa fa-plus-circle"></i> ADD
+					</button></a>
+				<button class="btn btn-deep-orange " type="reset"
+					style="width: 120px; font-size: 15px; padding-left: 8px; color: #ffffff; background: #ff7b00;">
+					<i class="fa fa-close"></i> Delete form
+				</button>
+				<a href=""><button class="btn btn-deep-orange " type="button"
+						style="width: 120px; font-size: 15px; padding-left: 8px; color: #ffffff; background: #ff7b00;">
+						<i class="fa fa-mail-reply"></i> Back
+					</button></a>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+	<script src="js/myScript.js"></script>
+
+</body>
+<script type="text/javascript">
+	var buttons = document.getElementsByClassName('tablinks');
+	var contents = document.getElementsByClassName('tabcontent');
+	function showContent(id) {
+		for (var i = 0; i < contents.length; i++) {
+			contents[i].style.display = 'none';
+		}
+		var content = document.getElementById(id);
+		content.style.display = 'block';
+	}
+	for (var i = 0; i < buttons.length; i++) {
+		buttons[i].addEventListener("click", function() {
+			var id = this.textContent;
+			for (var i = 0; i < buttons.length; i++) {
+				buttons[i].classList.remove("active");
+			}
+			this.className += " active";
+			showContent(id);
+		});
+	}
+	showContent('Requirement');
+</script>
+<!-- Main content area -->
+<main class="container">
+<div class="row"></div>
+
+</main>
+</body>
+</html>
