@@ -1,194 +1,366 @@
 <!doctype html>
 <html lang="en">
 <meta charset="utf-8">
-	<head>
-        <title>Exercise2</title>
+<head>
+<title>Exercise2</title>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-        <!-- Main CSS --> 
-        <link rel="stylesheet" href="css/style.css">
+<!-- Main CSS -->
+<link rel="stylesheet" href="css/style.css">
 
-        <!-- Font Awesome -->
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        
-        <style type="text/css">
-        div.container {
-            width: 100%;  
-            margin: auto;  
-        }
-        /* định dạng thẻ div chưa các button tab */
-        div.tab {
-            overflow: hidden; 
-            border: 1px solid #ccc; 
-            background-color: #f1f1f1; 
-        }
+<!-- Font Awesome -->
+<link
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	rel="stylesheet">
 
-        /* định dạng các button tab */
-        div.tab button {
-            background-color: inherit; 
-            float: left;
-            border: center;
-            outline: none;
-            cursor: pointer;
-            padding: 20px 40px;
-            transition: 0.3s;
-            font-size: 20px;
-            
-        }
+<style type="text/css">
+div.container {
+	width: 100%;
+	margin: auto;
+}
+/* định dạng thẻ div chưa các button tab */
+div.tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
 
-        /* đổi màu khi một button tab được hover */
-        div.tab button:hover {
-            background-color: #ddd;
-        }
+/* định dạng các button tab */
+div.tab button {
+	background-color: inherit;
+	float: left;
+	border: center;
+	outline: none;
+	cursor: pointer;
+	padding: 20px 40px;
+	transition: 0.3s;
+	font-size: 20px;
+}
 
-        /* đổi màu nền cho tab đang được hiển thị nội dung */
-        div.tab button.active {
-            background-color: #ccc;
-        }
+/* đổi màu khi một button tab được hover */
+div.tab button:hover {
+	background-color: #ddd;
+}
 
-        /* định dạng nội dung hiển thị */
-        .tabcontent {
-            display: none;
-            padding: 6px 12px;
-            border: 1px solid #ccc;
-            border-top: none;
-        }
-    </style>
-        
-    </head>
-  
-    <body>
+/* đổi màu nền cho tab đang được hiển thị nội dung */
+div.tab button.active {
+	background-color: #ccc;
+}
 
-        <!-- Header -->
-        <div class="header-wrap d-none d-md-block">
-            <div class="container">
-                <div class="row">
-                    
-                    <!-- Left header box -->
-                    <header class="col-6 text-right">
-                        <h1>Exercise2</h1>
-                    </header>
-                    
-                    <!-- Right header box -->
-                </div>
-            </div>
-        </div>
+/* định dạng nội dung hiển thị */
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+</style>
 
-        
-        <!-- Main navigation -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-primary no-slider">
-            <div class="container">
-                
-                <!-- Company name shown on mobile -->
-                <a class="navbar-brand d-md-none d-lg-none d-xl-none" href="#"><span>Exercise2</span></a>
+</head>
 
-                <!-- Mobile menu toggle -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<body>
 
-                <!-- Main navigation items -->
-                <div class="collapse navbar-collapse" id="mainNavbar">
-                  <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                                <a class="nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-              
-					<li class="nav-item">
-                                    <a class="nav-link " href="Labs1.html">Exercise1</a>
-                      
-                        </li>
-                        <li class="nav-item">
-                                    <a class="nav-link active "  href="Labs2.html">Exercise2</a>
-                      
-                        </li>
-                        <li class="nav-item">
-                                    <a class="nav-link "  href="Labs3.html">Exercise3</a>
-                      
-                        </li>
-                        <li class="nav-item">
-                                    <a class="nav-link "  href="Labs4.html">Exercise4</a>
-                        </li>
-                       <li class="nav-item">
-                                    <a class="nav-link "  href="Labs5.html">Exercise5</a>
-                   
-                       <li class="nav-item">
-                                    <a class="nav-link "  href="About.html">About</a> 
-                        </li>
-                    </ul>
-                    <form class="My Labs">
-                        <input class="form-control mr-sm-2" type="text" size="10"  placeholder="Search" aria-label="Search">
-                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                    
-                
-                </div>
-            </div>
-        </nav>
+	<!-- Header -->
+	<div class="header-wrap d-none d-md-block">
+		<div class="container">
+			<div class="row">
+
+				<!-- Left header box -->
+				<header class="col-6 text-right">
+					<h1>Exercise2</h1>
+				</header>
+
+				<!-- Right header box -->
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Main navigation -->
+	<nav class="navbar navbar-expand-md navbar-dark bg-primary no-slider">
+		<div class="container">
+
+			<!-- Company name shown on mobile -->
+			<a class="navbar-brand d-md-none d-lg-none d-xl-none" href="#"><span>Exercise2</span></a>
+
+			<!-- Mobile menu toggle -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#mainNavbar" aria-controls="mainNavbar"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Main navigation items -->
+			<div class="collapse navbar-collapse" id="mainNavbar">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link " href="index.html">Home
+							<span class="sr-only">(current)</span>
+					</a></li>
+
+					<li class="nav-item"><a class="nav-link " href="Labs1.html">Exercise1</a>
+
+					</li>
+					<li class="nav-item"><a class="nav-link active "
+						href="Labs2.html">Exercise2</a></li>
+					<li class="nav-item"><a class="nav-link " href="Labs3.html">Exercise3</a>
+
+					</li>
+					<li class="nav-item"><a class="nav-link " href="Labs4.html">Exercise4</a>
+					</li>
+					<li class="nav-item"><a class="nav-link " href="Labs5.html">Exercise5</a>
+					<li class="nav-item"><a class="nav-link " href="About.html">About</a>
+					</li>
+				</ul>
+				<form class="My Labs">
+					<input class="form-control mr-sm-2" type="text" size="10"
+						placeholder="Search" aria-label="Search">
+					<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+				</form>
+
+
+			</div>
+		</div>
+	</nav>
 	<main class="container">
-            <div class="row">
-                
-               
-                </div>
-            </div> 
-        </main>
-         <div class="container">
-            <h4></h4>
-            <div class="tab">
-              <button class="tablinks active ">Requirement</button>
-			  <button class="tablinks">User Scenario</button>
-              <button class="tablinks">Design</button>
-              <button class="tablinks">Implement</button>
-            </div>
+	<div class="row"></div>
+	</div>
+	</main>
+	<div class="container">
+		<h4></h4>
+		<div class="tab">
+			<button class="tablinks active ">Requirement</button>
+			<button class="tablinks">User Scenario</button>
+			<button class="tablinks">Design</button>
+			<button class="tablinks">Implement</button>
+		</div>
 
-            <div id="Requirement" class="tabcontent">
-                <h3><center>Yêu cầu</center> </h3>
-             
+		<div id="Requirement" class="tabcontent">
+			<h3>
+				<center>Yêu cầu</center>
+			</h3>
 
-            <div id="Design" class="tabcontent">
-                <h3>Design</h3>
-                <p>
-                </p> 
-            </div>
+			<ul>
+				<li>Tạo ra một user scenario</li>
+				<li>Chọn1 bước trong user scenario để thiết kế1 form giao diện
+					Web trên công cụ thiết kế đã chọn</li>
+				<li>Sau đó tạo ra file html tương ứng cho thiết kế này.</li>
+			</ul>
 
-            <div id="Implement" class="tabcontent">
-                <h3>Implement</h3>
-                <p>
-                </p>
-            </div>
-        </div>
-    </body>
-    <script type="text/javascript">
-        var buttons = document.getElementsByClassName('tablinks');
-        var contents = document.getElementsByClassName('tabcontent');
-        function showContent(id){
-            for (var i = 0; i < contents.length; i++) {
-                contents[i].style.display = 'none';
-            }
-            var content = document.getElementById(id);
-            content.style.display = 'block';
-        }
-        for (var i = 0; i < buttons.length; i++) {
-            buttons[i].addEventListener("click", function(){
-                var id = this.textContent;
-                for (var i = 0; i < buttons.length; i++) {
-                    buttons[i].classList.remove("active");
-                }
-                this.className += " active";
-                showContent(id);
-            });
-        }
-        showContent('Requirement');
-  </script>
-        <!-- Main content area -->
-        <main class="container">
-            <div class="row">
-      
-             </div>  
-                           
-        </main>
-    </body>
+			<div id="User Scenario" class="tabcontent">
+				<div class="card-right">
+					<a href="images2/user.zip"><button class="btn btn-deep-orange "
+							type="button"
+							style="width: 120px; font-size: 15px; padding-left: 8px; color: #1adaef; background: #ff7b00;">
+							<i></i> Download
+						</button></a>
+				</div>
+				<div class="card-left">
+					<img src="images2/user.jpg" alt="" width="400px">
+				</div>
+			</div>
+		</div>
+
+		<div id="Design" class="tabcontent">
+			<h3><center>Design</center></h3>
+			<div class="container">
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion"
+									href="#collapse1"><Strong>Thiết kế trên giấy</Strong></a>
+							</h4>
+						</div>
+						<div class="card-body-design">
+							<div class="card-right">
+								<a href="images2/page.zip"><button
+										class="btn btn-deep-orange " type="button"
+										style="width: 120px; font-size: 15px; padding-left: 8px; color: #1adaef; background: #ff7b00;">
+										<i></i> Download
+									</button></a>
+							</div>
+							<div class="card-left">
+								<img src="images2/page.jpg" alt="" width="600px">
+							</div>
+
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion"
+									href="#collapse2"><Strong>Thiết kế trên figma</Strong></a>
+							</h4>
+						</div>
+						<div class="card-body-design">
+							<div class="card-right">
+								<a href="images2/figma.zip"><button
+										class="btn btn-deep-orange " type="button"
+										style="width: 120px; font-size: 15px; padding-left: 8px; color: #1adaef; background: #ff7b00;">
+										<i></i> Download
+									</button></a>
+							</div>
+							<div class="card-left">
+								<img src="images2/figma.jpg" alt="" width="600px">
+							</div>
+
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-header">
+							<a class="collapsed card-link" data-toggle="collapse"
+								href="#collapseTwo" style="color: #179EFF">Download all file</a>
+						</div>
+						<div class="card-body-design">
+							<div class="card-right">
+								<a href="images2\17130106_Design.zip"><button
+										class="btn btn-deep-orange " type="button"
+										style="width: 120px; font-size: 15px; padding-left: 8px; color: #1adaef; background: #ff7b00;">
+										<i></i> Download
+									</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div id="Implement" class="tabcontent">
+			<h3>
+				<center>Implement</center>
+			</h3>
+			<div role="tabpanel" class="tab-pane" id="week2">
+				<div class="col-md-4 " style="text-align: center;">
+					<button class="btn btn-deep-orange " type="button"
+						style="width: 150px; font-size: 15px; padding-left: 8px; height: 42px; color: #ffffff; background: #5C5C5C; border-radius: 5px">
+						<img src="images2/card.png" alt="card" width="20px"
+							style="margin-right: 5px;"> GIỎ HÀNG
+					</button>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row justify-content-center">
+
+					<div class="col-md-3">
+						<div class="card" style="width: 15rem;">
+							<img class="card-img-top" src="imagesLab2/productIPhone.jpg"
+								alt="">
+							<div class="card-body">
+								<p class="card-text">Laptop macbook Air 128GB</p>
+								<img src="images2/maxbook.png" style="margin-left: -12px"
+									width="150px" alt="">
+								<p class="card-text">Giá:22.000.000đ</p>
+								<button class="btn btn-deep-orange " type="button"
+									style="width: 120px; font-size: 15px; padding-left: 8px; color: #ffffff; background: #FF6639; margin-left: 40px">
+									Mua ngay</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="card" style="width: 15rem;">
+							<img class="card-img-top" src="images2/hp.jpg"
+								alt="">
+							<div class="card-body">
+								<p class="card-text">Laptop HP Pavilion 15</p>
+								<img src="imagesLab2/productPrice.png"
+									style="margin-left: -12px" width="150px" alt="">
+								<p class="card-text">Giá:11.000.000đ</p>
+								<button class="btn btn-deep-orange " type="button"
+									style="width: 120px; font-size: 15px; padding-left: 8px; color: #ffffff; background: #FF6639; margin-left: 40px">
+									Mua ngay</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="card" style="width: 15rem;">
+							<img class="card-img-top" src="images2/laptop.jpg"
+								alt="Card image cap">
+							<div class="card-body">
+								<p class="card-text">Laptop Dell Vostro</p>
+								<img src="imagesLab2/productPrice2.png"
+									style="margin-left: -12px" width="150px" alt="">
+
+								<p class="card-text">Giá:16.000.000đ</p>
+								<button class="btn btn-deep-orange " type="button"
+									style="width: 120px; font-size: 15px; padding-left: 8px; color: #ffffff; background: #FF6639; margin-left: 40px">
+									Mua ngay</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="card" style="width: 15rem;">
+							<img class="card-img-top" src="images2/iphone.jpg"
+								alt="Card image cap">
+							<div class="card-body">
+								<p class="card-text">Iphone XS Max 256GB</p>
+								<img src="imagesLab2/productPrice2.png"
+									style="margin-left: -12px" width="150px" alt="">
+								<p class="card-text">Giá:29.900.000đ</p>
+								<button class="btn btn-deep-orange " type="button"
+									style="width: 120px; font-size: 15px; padding-left: 8px; color: #ffffff; background: #FF6639; margin-left: 40px">
+									Mua ngay</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="card" style="width: 15rem;">
+							<img class="card-img-top" src="images2/iphone11.jpg"
+								alt="Card image cap">
+							<div class="card-body">
+								<p class="card-text">Iphone 11 Pro 64GB</p>
+								<img src="imagesLab2/productPrice3.png"
+									style="margin-left: -12px" width="150px" alt="">
+
+								<p class="card-text">Giá:30.990.000đ</p>
+								<button class="btn btn-deep-orange " type="button"
+									style="width: 120px; font-size: 15px; padding-left: 8px; color: #ffffff; background: #FF6639; margin-left: 40px">
+									Mua ngay</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var buttons = document.getElementsByClassName('tablinks');
+	var contents = document.getElementsByClassName('tabcontent');
+	function showContent(id) {
+		for (var i = 0; i < contents.length; i++) {
+			contents[i].style.display = 'none';
+		}
+		var content = document.getElementById(id);
+		content.style.display = 'block';
+	}
+	for (var i = 0; i < buttons.length; i++) {
+		buttons[i].addEventListener("click", function() {
+			var id = this.textContent;
+			for (var i = 0; i < buttons.length; i++) {
+				buttons[i].classList.remove("active");
+			}
+			this.className += " active";
+			showContent(id);
+		});
+	}
+	showContent('Requirement');
+</script>
+<!-- Main content area -->
+<main class="container">
+<div class="row"></div>
+
+</main>
+</body>
 </html>
