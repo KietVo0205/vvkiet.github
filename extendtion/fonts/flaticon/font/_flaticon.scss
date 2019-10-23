@@ -1,12 +1,13 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 06/11/2018 21:42
+    Creation date: 23/07/2019 22:03
     */
 
     @font-face {
   font-family: "Flaticon";
   src: url("./Flaticon.eot");
   src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
        url("./Flaticon.woff") format("woff"),
        url("./Flaticon.ttf") format("truetype"),
        url("./Flaticon.svg#Flaticon") format("svg");
@@ -36,12 +37,16 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-reception-bell:before { content: "\f100"; }
-.flaticon-car:before { content: "\f101"; }
-.flaticon-spa:before { content: "\f102"; }
-.flaticon-serving-dish:before { content: "\f103"; }
+    .flaticon-scissors:before { content: "\f100"; }
+.flaticon-beard:before { content: "\f101"; }
+.flaticon-bald:before { content: "\f102"; }
+.flaticon-hair-spray:before { content: "\f103"; }
+.flaticon-hair:before { content: "\f104"; }
+.flaticon-barber-shop:before { content: "\f105"; }
     
-    $font-Flaticon-reception-bell: "\f100";
-    $font-Flaticon-car: "\f101";
-    $font-Flaticon-spa: "\f102";
-    $font-Flaticon-serving-dish: "\f103";
+    $font-Flaticon-scissors: "\f100";
+    $font-Flaticon-beard: "\f101";
+    $font-Flaticon-bald: "\f102";
+    $font-Flaticon-hair-spray: "\f103";
+    $font-Flaticon-hair: "\f104";
+    $font-Flaticon-barber-shop: "\f105";
