@@ -7,8 +7,25 @@
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--bootStrap -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--bootStrap -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 <!-- Main CSS -->
 <link rel="stylesheet" href="css/style.css">
@@ -18,53 +35,10 @@
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 	rel="stylesheet">
 
-<style type="text/css">
-div.container {
-	width: 100%;
-	margin: auto;
-}
-/* định dạng thẻ div chưa các button tab */
-div.tab {
-	overflow: hidden;
-	border: 1px solid #ccc;
-	background-color: #f1f1f1;
-}
-
-/* định dạng các button tab */
-div.tab button {
-	background-color: inherit;
-	float: left;
-	border: center;
-	outline: none;
-	cursor: pointer;
-	padding: 20px 40px;
-	transition: 0.3s;
-	font-size: 20px;
-}
-
-/* đổi màu khi một button tab được hover */
-div.tab button:hover {
-	background-color: #ddd;
-}
-
-/* đổi màu nền cho tab đang được hiển thị nội dung */
-div.tab button.active {
-	background-color: #ccc;
-}
-
-/* định dạng nội dung hiển thị */
-.tabcontent {
-	display: none;
-	padding: 6px 12px;
-	border: 1px solid #ccc;
-	border-top: none;
-}
-</style>
 
 </head>
 
 <body>
-
 	<!-- Header -->
 	<div class="header-wrap d-none d-md-block">
 		<div class="container">
@@ -86,7 +60,7 @@ div.tab button.active {
 		<div class="container">
 
 			<!-- Company name shown on mobile -->
-			<a class="navbar-brand d-md-none d-lg-none d-xl-none" href="#"><span>Exercise</span></a>
+			<a class="navbar-brand d-md-none d-lg-none d-xl-none" href="#"><span>Lab2</span></a>
 
 			<!-- Mobile menu toggle -->
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -101,143 +75,184 @@ div.tab button.active {
 					<li class="nav-item"><a class="nav-link " href="index.html">Home
 							<span class="sr-only">(current)</span>
 					</a></li>
-					<li class="nav-item"><a class="nav-link " href="Lab1.html">Lab1</a>
-					</li>
-					<li class="nav-item"><a class="nav-link active "
-						href="Lab2.html">Lab2</a></li>
-					<li class="nav-item"><a class="nav-link " href="Lab3.html">Lab3</a>
+
+					<li class="nav-item"><a class="nav-link " href="Lab1.html">Lab1</a></li>
+					<li class="nav-item"><a class="nav-link active" href="Lab2.html">Lab2</a>
 
 					</li>
-					<li class="nav-item"><a class="nav-link " href="Lab4.html">Lab4</a>
-					</li>
+					<li class="nav-item"><a class="nav-link " href="Lab3.html">Lab3</a></li>
+					<li class="nav-item"><a class="nav-link "
+						href="Lab4.html">Lab4</a></li>
 					<li class="nav-item"><a class="nav-link " href="Lab5.html">Lab5</a>
 					<li class="nav-item"><a class="nav-link " href="About.html">About</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link "  href="https://hci2019group06.tk/about.html">Group 06</a>
-					</li>
+					<li class="nav-item"><a class="nav-link "
+						href="https://hci2019group06.tk/about.html">Group 06</a></li>
 				</ul>
-				<form class="My Labs">
-					<input class="form-control mr-sm-2" type="text" size="10"
-						placeholder="Search" aria-label="Search">
-					<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+				<form class="form-inline header-search-form my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="text" size="20" placeholder="Search" aria-label="Search">
+						<button class="my-2 my-sm-0 " type="submit">Search</button>
 				</form>
-
-
 			</div>
 		</div>
 	</nav>
-	<main class="container">
-	<div class="row"></div>
-	</main>
-	<div class="container">
-		<div class="tab">
-			<button class="tablinks active ">Requirement</button>
-			<button class="tablinks">User Scenario</button>
-			<button class="tablinks">Design</button>
-			<button class="tablinks">Implement</button>
-		</div>
+	<!-- Nav tabs -->
+	<div class="labs-section">
+		<ul class="nav nav-tabs">
+			<li class="nav-item"><a class="nav-link active"
+				data-toggle="tab" href="#requirement1"> <span class="fa fa-list"></span>Requirement
+			</a></li>
+			<li class="nav-item"><a class="nav-link" data-toggle="tab"
+				href="#user1"> <span class="far fa-file-alt"></span>User Scenario
+			</a></li>
+			<li class="nav-item"><a class="nav-link" data-toggle="tab"
+				href="#design1"> <span class="fas fa-pencil-alt"></span>Design
+			</a></li>
+			<li class="nav-item "><a class="nav-link" data-toggle="tab"
+				href="#implement1"> <span class="fa fa-check-square-o"></span>Implement
+			</a></li>
 
-		<div id="Requirement" class="tabcontent">
-			<h3>
-				<center>Yêu cầu</center>
-			</h3>
+		</ul>
 
-			<ul>
-				<li>Tạo ra một user scenario</li>
-				<li>Chọn1 bước trong user scenario để thiết kế1 form giao diện
-					Web trên công cụ thiết kế đã chọn</li>
-				<li>Sau đó tạo ra file html tương ứng cho thiết kế này.</li>
-			</ul>
+		<!-- Tab panes -->
+		<div class="labs-section">
+		<div class="tab-content">
+			<div class="tab-pane container active" id="requirement1">
+			<div class="card">
+				<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th scope="col" style="color: black"><b>STT</b></th>
+								<th scope="col" style="color: black">Yêu cầu</th>
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td> Tạo ra một user scenario</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Chọn1 bước trong user scenario để thiết kế1 form giao diện
+					Web trên công cụ thiết kế đã chọn</td>
+
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Sau đó tạo ra file html tương ứng cho thiết kế này.</td>
+
+							</tr>
+						</tbody>
+					</table>
+			</div>
+			</div>
+			<!-- user1 -->
+<div class="tab-pane container fade" id="user1">
+                                        <div class="card">
+                                        <div id="collapse1" class="collapse fade in active show" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row align-items-center">
+                                                    <div class="col-8">
+                                                        <div class="card-item-img">
+                                                            <img src="images2/user.jpg" width="700px" height="500px">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-4 text-center">
+                                                        <a href="images2/user.zip" download="">
+                                                            <button type="button" class="btn btn-primary">
+                                                                <i class="fa fa-cloud-download"></i> Tải về file thiết
+                                                                kế
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
 </div>
-			<div id="User Scenario" class="tabcontent">
+
+<!-- design -->
+			<div class="tab-pane container fade" id="design1">
+  <div class="col-12 p-0">
+                                <div class="mt-3 mb-2 title">
+                                    <h3 class="title-1">Design</h3>
+                                </div>
+                                <div id="accordion">
+                                    <!--Vẽ trên giấy-->
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="card-link active" data-toggle="collapse" href="#collapse1">
+                                                <span>1. Thiết kế vẽ sơ bộ trên giấy</span></a>
+                                        </div>
+                                        <div id="collapse1" class="collapse fade in active show" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row align-items-center">
+                                                    <div class="col-8">
+                                                        <div class="card-item-img">
+                                                            <img src="images2/page.jpg" width="500px" height="300px">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-4 text-center">
+                                                        <a href="images2/page.zip" download="">
+                                                            <button type="button" class="btn btn-primary">
+                                                                <i class="fa fa-cloud-download"></i> Tải về file thiết
+                                                                kế
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Vẽ trên figma-->
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="card-link active" data-toggle="collapse" href="#collapse2">
+                                                <span>2. Thiết kế vẽ trên figma</span></a>
+                                        </div>
+                                        <div id="collapse2" class="collapse fade in active show" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row align-items-center">
+                                                    <div class="col-8">
+                                                        <div class="card-item-img">
+                                                            <img src="images2/figma.jpg" width="800px" height="400px">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-4 text-center">
+                                                        <a href="images2/figma.fig" download="">
+                                                            <button type="button" class="btn btn-primary">
+                                                                <i class="fa fa-cloud-download"></i> Tải về file thiết
+                                                                kế
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 text-center mt-3">
+                                                        <a href="images2/17130106_Design.zip" download="">
+                                                            <button type="button" class="btn btn-primary2">
+                                                                <i class="fa fa-cloud-download"></i> Tải về tất cả
+                                                                các file
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+			</div>
+
+			<!--implement -->
+			<div class="tab-pane container fade" id="implement1">
 				<h3>
-					<center>User Scenario</center>
-				</h3>
-				<div class="card-right">
-					<a href="images2/user.zip"><button class="btn btn-deep-orange "
-							type="button"
-							style="width: 120px; font-size: 15px; padding-left: 8px; color: #1adaef; background: #173fd1;">
-							<i></i> Download
-						</button></a>
-				</div>
-				<div class="card-left">
-					<img src="images2/user.jpg" alt="" width="850px">
-				</div>
-			</div>
-		</div>
-
-		<div id="Design" class="tabcontent">
-			<h3>
-				<center>Design</center>
-			</h3>
-			<div class="container">
-				<div class="panel-group" id="accordion">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion"
-									href="#collapse1"><Strong>Thiết kế trên giấy</Strong></a>
-							</h4>
-						</div>
-						<div class="card-body-design">
-							<div class="card-right">
-								<a href="images2/page.zip"><button
-										class="btn btn-deep-orange " type="button"
-										style="width: 120px; font-size: 15px; padding-left: 8px; color: #1adaef; background: #173fd1;">
-										<i></i> Download
-									</button></a>
-							</div>
-							<div class="card-left">
-								<img src="images2/page.jpg" alt="" width="600px">
-							</div>
-
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion"
-									href="#collapse2"><Strong>Thiết kế trên figma</Strong></a>
-							</h4>
-						</div>
-						<div class="card-body-design">
-							<div class="card-right">
-								<a href="images2/figma.zip"><button
-										class="btn btn-deep-orange " type="button"
-										style="width: 120px; font-size: 15px; padding-left: 8px; color: #1adaef; background: #173fd1;">
-										<i></i> Download
-									</button></a>
-							</div>
-							<div class="card-left">
-								<img src="images2/figma.jpg" alt="" width="600px">
-							</div>
-
-						</div>
-					</div>
-
-					<div class="card">
-						<div class="card-header">
-							<a class="collapsed card-link" data-toggle="collapse"
-								href="#collapseTwo" style="color: #179EFF">Download all file</a>
-						</div>
-						<div class="card-body-design">
-							<div class="card-right">
-								<a href="images2/17130106_Design.zip"><button
-										class="btn btn-deep-orange " type="button"
-										style="width: 120px; font-size: 15px; padding-left: 8px; color: #1adaef; background: #173fd1;">
-										<i></i> Download
-									</button></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-		<div id="Implement" class="tabcontent">
-			<h3>
 				<center>Implement</center>
 			</h3>
 			<br> <br> <br>
@@ -265,12 +280,12 @@ div.tab button.active {
 						<div class="col-md-3">
 							<div class="card" style="width:200px;height:350px;background-color: #ffffff;border-radius: 20px">
 							<p style="text-align: right;color: #FF1F1F;margin-right: 15px">5%</p>
-								<img class="card-img-top" src="images2/maxbook.jpg" alt="">
+								<img class="card-img-top" src="images2/asus.jpg" alt="">
 								<div class="card-body">
 									<p class="card-text">Macbook Air 128Gb</p>
 									<img src="images2/mac128.png" style="margin-left: -12px" width="150px" alt="">
 									<button class="btn btn-deep-orange " type="button"
-										style="width: 120px; font-size: 15px; padding-left: 10px; color: #ffffff; background: #000000; margin-left: 40px">
+										style="width: 120px; font-size: 15px; padding-left: 10px; color: #ffffff; background: #000000; margin-left: 20px">
 										Mua ngay</button>
 								</div>
 							</div>
@@ -283,7 +298,7 @@ div.tab button.active {
 									<p class="card-text">Laptop HP Pavilion 15</p>
 									<img src="images2/t1.png" style="margin-left: -12px" width="150px" alt="">
 									<button class="btn btn-deep-orange " type="button"
-										style="width: 120px; font-size: 15px; padding-left: 10px; color: #ffffff; background: #000000; margin-left: 40px">
+										style="width: 120px; font-size: 15px; padding-left: 10px; color: #ffffff; background: #000000; margin-left: 20px">
 										Mua ngay</button>
 								</div>
 							</div>
@@ -298,7 +313,7 @@ div.tab button.active {
 									<p class="card-text">Laptop Dell Vostro</p>
 									<img src="images2/laptoppay.png" style="margin-left: -12px" width="150px" alt="">
 									<button class="btn btn-deep-orange " type="button"
-										style="width: 120px; font-size: 15px; padding-left: 10px; color: #ffffff; background: #000000; margin-left: 40px">
+										style="width: 120px; font-size: 15px; padding-left: 10px; color: #ffffff; background: #000000; margin-left: 20px">
 										Mua ngay</button>
 								</div>
 							</div>
@@ -313,7 +328,7 @@ div.tab button.active {
 									<p class="card-text">MacBook Air 2019</p>
 									<img src="images2/ipxs.png" style="margin-left: -12px" width="150px" alt="">
 									<button class="btn btn-deep-orange" type="button"
-										style="width: 120px; font-size: 15px; padding-left: 10px; color: #ffffff; background: #000000; margin-left: 40px">
+										style="width: 120px; font-size: 15px; padding-left: 10px; color: #ffffff; background: #000000; margin-left: 20px">
 										Mua ngay</button>
 								</div>
 							</div>
@@ -334,34 +349,13 @@ div.tab button.active {
 				</div>
 
 			</div>
-		</div>
-
-		<!-- Main content area -->
-		<main class="container">
-		<div class="row"></div>
-		</main>
+</div>
 </body>
-<script type="text/javascript">
-	var buttons = document.getElementsByClassName('tablinks');
-	var contents = document.getElementsByClassName('tabcontent');
-	function showContent(id) {
-		for (var i = 0; i < contents.length; i++) {
-			contents[i].style.display = 'none';
-		}
-		var content = document.getElementById(id);
-		content.style.display = 'block';
-	}
-	for (var i = 0; i < buttons.length; i++) {
-		buttons[i].addEventListener("click", function() {
-			var id = this.textContent;
-			for (var i = 0; i < buttons.length; i++) {
-				buttons[i].classList.remove("active");
 
-			}
-			this.className += " active";
-			showContent(id);
-		});
-	}
-	showContent('Requirement');
-</script>
+<!-- Main content area -->
+<main class="container">
+<div class="row"></div>
+
+</main>
+</body>
 </html>

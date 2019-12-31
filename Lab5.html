@@ -7,8 +7,20 @@
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--bootStrap -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 <!-- Main CSS -->
 <link rel="stylesheet" href="css/style.css">
@@ -18,53 +30,9 @@
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 	rel="stylesheet">
 
-<style type="text/css">
-div.container {
-	width: 100%;
-	margin: auto;
-}
-/* định dạng thẻ div chưa các button tab */
-div.tab {
-	overflow: hidden;
-	border: 1px solid #ccc;
-	background-color: #f1f1f1;
-}
-
-/* định dạng các button tab */
-div.tab button {
-	background-color: inherit;
-	float: left;
-	border: center;
-	outline: none;
-	cursor: pointer;
-	padding: 20px 40px;
-	transition: 0.3s;
-	font-size: 20px;
-}
-
-/* đổi màu khi một button tab được hover */
-div.tab button:hover {
-	background-color: #ddd;
-}
-
-/* đổi màu nền cho tab đang được hiển thị nội dung */
-div.tab button.active {
-	background-color: #ccc;
-}
-
-/* định dạng nội dung hiển thị */
-.tabcontent {
-	display: none;
-	padding: 6px 12px;
-	border: 1px solid #ccc;
-	border-top: none;
-}
-</style>
-
 </head>
 
 <body>
-
 	<!-- Header -->
 	<div class="header-wrap d-none d-md-block">
 		<div class="container">
@@ -72,7 +40,7 @@ div.tab button.active {
 
 				<!-- Left header box -->
 				<header class="col-6 text-right">
-					<h1>Lab2</h1>
+					<h1>Lab5</h1>
 				</header>
 
 				<!-- Right header box -->
@@ -86,7 +54,7 @@ div.tab button.active {
 		<div class="container">
 
 			<!-- Company name shown on mobile -->
-			<a class="navbar-brand d-md-none d-lg-none d-xl-none" href="#"><span>Exercise</span></a>
+			<a class="navbar-brand d-md-none d-lg-none d-xl-none" href="#"><span>Lab4</span></a>
 
 			<!-- Mobile menu toggle -->
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -101,87 +69,126 @@ div.tab button.active {
 					<li class="nav-item"><a class="nav-link " href="index.html">Home
 							<span class="sr-only">(current)</span>
 					</a></li>
-					<li class="nav-item"><a class="nav-link " href="Lab1.html">Lab1</a>
-					</li>
-					<li class="nav-item"><a class="nav-link "
-						href="Lab2.html">Lab2</a></li>
-					<li class="nav-item"><a class="nav-link " href="Lab3.html">Lab3</a>
+
+					<li class="nav-item"><a class="nav-link " href="Lab1.html">Lab1</a></li>
+					<li class="nav-item"><a class="nav-link " href="Lab2.html">Lab2</a>
 
 					</li>
+					<li class="nav-item"><a class="nav-link " href="Lab3.html">Lab3</a></li>
 					<li class="nav-item"><a class="nav-link " href="Lab4.html">Lab4</a>
 					</li>
-					<li class="nav-item"><a class="nav-link active  " href="Lab5.html">Lab5</a>
+					<li class="nav-item"><a class="nav-link active "
+						href="Lab5.html">Lab5</a>
 					<li class="nav-item"><a class="nav-link " href="About.html">About</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link "  href="https://hci2019group06.tk/about.html">Group 06</a>
-					</li>
+					<li class="nav-item"><a class="nav-link "
+						href="https://hci2019group06.tk/about.html">Group 06</a></li>
 				</ul>
-				<form class="My Labs">
-					<input class="form-control mr-sm-2" type="text" size="10"
-						placeholder="Search" aria-label="Search">
-					<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+				<form class="form-inline header-search-form my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="text" size="20" placeholder="Search" aria-label="Search">
+						<button class="my-2 my-sm-0 " type="submit">Search</button>
 				</form>
-
-
+				
 			</div>
 		</div>
 	</nav>
-	<main class="container">
-	<div class="row"></div>
-	</main>
-	<div class="container">
-		<div class="tab">
-			<button class="tablinks active ">Requirement</button>
-			<button class="tablinks">User Scenario</button>
-			<button class="tablinks">Design</button>
-			<button class="tablinks">Implement</button>
-		</div>
+	<br>
+	<!-- Nav tabs -->
+	<div class="labs-section">
+		<ul class="nav nav-tabs">
+			<li class="nav-item"><a class="nav-link active"
+				data-toggle="tab" href="#requirement1">
+				<span class="fa fa-list"></span>Requirement</a></li>
+			<li class="nav-item "><a class="nav-link" data-toggle="tab"
+				href="#implement1">
+				<span class="fa fa-check-square-o"></span>Implement</a></li>
 
-		<div id="Requirement" class="tabcontent">
+		</ul>
 
-</div>
-			<div id="User Scenario" class="tabcontent">
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div class="tab-pane container active" id="requirement1">
+				<br>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th scope="col" style="color:" title="Số thứ tự"><b>STT</b></th>
+							<th scope="col" style="color:">Yêu cầu</th>
 
-		</div>
-
-		<div id="Design" class="tabcontent">
-
-
-		</div>
-
-		<div id="Implement" class="tabcontent">
-
-
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="">1</th>
+							<td>Tạo một trang Resuilt trên đó liệt kê những gì mình đã
+								làm / học được trong suốt quá trình làm bài tập nhóm.Dẫn link
+								tới từng trang do SV làm.</td>
+						</tr>
+						<tr>
+							<th scope="">2</th>
+							<td>Tự đánh giá mình làm được bao nhiêu % trong tổng số 100%
+								của bài tập nhóm.</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
+
+
+
+			<!--implement -->
+			<div class="tab-pane container fade" id="implement1"><br>
+				<div class="container-fluid header"></div>
+				<div role="tabpanel" class="tab-pane active" id="week3" aria-expanded="true">
+					<ul class="nav nav-tabs" role="tablist">
+						<li class="nav-item"><a class="nav-link active" href="#week4" role="tab" data-toggle="tab" aria-expanded="true">
+						<span class="fas fa-business-time"></span>
+						Chức năng đã thực hiện</a></li>
+						<li class="nav-item"><a class="nav-link" href="#week5" role="tab" data-toggle="tab" aria-expanded="false">
+						<span class="fas fa-book-reader"></span>
+						Kiến thức và kinh nghiệm học được sau môn học</a></li>
+					</ul>
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="week4" style="margin-bottom: -130px;" aria-expanded="true">
+							<a href="#" target="_blank"><button type="button" class="btn btn-secondary" style="height: 45px; background: #41903e; width: 130px; margin-left: 495px; margin-top: 50px;">
+									<i class='fas fa-plane-departure' style='font-size:24px'style="font-size: 24px;"></i>
+								</button></a>
+									<br> <br> <a href="http://tourmanagement.tk/booking.html" target="_blank"><button type="button" class="btn btn-secondary" style="height: 45px; background: #41903e; width: 230px; margin-left: 92px">
+									1. Chức năng đặt tour </button></a>
+									<a href="http://tourmanagement.tk/confirm.html" target="_blank"><button type="button" class="btn btn-secondary" style="height: 45px; background: #41903e; width: 230px;">
+									2. Chức năng trang xác nhận</button></a>
+									<a href="https://hci2019group06.tk/result.html" target="_blank"><button type="button" class="btn btn-secondary" style="height: 45px; background: #41903e; width: 230px;">
+									3. Trang Result</button></a>
+									<a href="https://hci2019group06.tk/technology.html" target="_blank"><button type="button" class="btn btn-secondary" style="height: 45px; background: #41903e; width: 230px;">
+									4. Trang Technology</button></a>
+
+						</div>
+						<div role="tabpanel" class="tab-pane" id="week5" aria-expanded="false">
+
+
+						<i class="fa fa-check-circle"></i>Áp dụng thành thạo các framework như: jquery, bootstrap,... <br>
+						<i class="fa fa-check-circle"></i>Học được cách sữ dụng Github,Bootstrap , HTML, CSS.<br>
+						<i class="fa fa-check-circle"></i>Áp dụng được các mẫu thiết kế trong quá trình học vào thực tế. <br>
+						<i class="fa fa-check-circle"></i>Học được cách phát hiện lỗi và sửa lỗi trong quá trình thiết kế.<br>
+						<i class="fa fa-check-circle"></i>Áp dụng đầy đủ quy trình thiết kế cho một sản phẩm phần mềm.<br>
+						<i class="fa fa-check-circle"></i>Học được cách điều khiển màu sắc và phối màu. Sữ dụng font chữ hợp lý cho trang website.<br>
+						<i class="fa fa-check-circle"></i>Học được kinh nghiệm làm project theo nhóm.<br>
+						<i class="fa fa-check-circle"></i>Áp dụng được các công cụ thiết kế vào trong quá trình thiết kế: figma, Sourcetree,....<br>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
 		</div>
+	</div>
 
-		<!-- Main content area -->
-		<main class="container">
-		<div class="row"></div>
-		</main>
 </body>
-<script type="text/javascript">
-	var buttons = document.getElementsByClassName('tablinks');
-	var contents = document.getElementsByClassName('tabcontent');
-	function showContent(id) {
-		for (var i = 0; i < contents.length; i++) {
-			contents[i].style.display = 'none';
-		}
-		var content = document.getElementById(id);
-		content.style.display = 'block';
-	}
-	for (var i = 0; i < buttons.length; i++) {
-		buttons[i].addEventListener("click", function() {
-			var id = this.textContent;
-			for (var i = 0; i < buttons.length; i++) {
-				buttons[i].classList.remove("active");
 
-			}
-			this.className += " active";
-			showContent(id);
-		});
-	}
-	showContent('Requirement');
-</script>
+<!-- Main content area -->
+<main class="container">
+<div class="row"></div>
+
+</main>
+</body>
 </html>
